@@ -40,13 +40,13 @@ namespace Rekog
                     CompareFaces.Run(c2image1, c2image2);
                     break;
                 case "3":
-                    //Console.Write("Enter image filename: ");
-                    //var c3filename = Console.ReadLine();
-                    //Console.Write("Enter identity: ");
-                    //var c3idname = Console.ReadLine();
+                    Console.Write("Enter collection id: ");
+                    var c3collectionid = Console.ReadLine();
+                    Console.Write("Enter image filename: ");
+                    var c3filename = Console.ReadLine();
 
-
-
+                    var c3image = GetRekogImage(c3filename);
+                    IdentifyFace.Run(c3collectionid, c3image);
                     break;
                 case "4":
                     Console.Write("Enter collection id: ");

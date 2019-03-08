@@ -7,7 +7,6 @@ namespace Rekog
 {
     class ListFaces
     {
-
         public static void Run(string collectionId, string faceId)
         {
             try
@@ -18,7 +17,7 @@ namespace Rekog
 
                 Console.WriteLine("Matche(s): ");
                 foreach (FaceMatch face in result.FaceMatches)
-                    Console.WriteLine("FaceId: " + face.Face.FaceId + " | ImageId: " + face.Face.ExternalImageId + ",  Similarity: " + face.Similarity);
+                    Console.WriteLine("FaceId: " + face.Face.FaceId + " | ImageId: " + face.Face.ExternalImageId + " | Similarity: " + face.Similarity);
                 Console.WriteLine();
             }
             catch (Exception e)
