@@ -12,10 +12,10 @@ namespace Rekog
             Console.WriteLine("Facial Recognition using AWS Rekognition");
             Console.WriteLine("");
             Console.WriteLine("Select an option below:");
-            Console.WriteLine(" 1 - Detect Faces");
+            Console.WriteLine(" 1 - Detect faces");
             Console.WriteLine(" 2 - Compare two faces");
-            Console.WriteLine(" 3 - Lookup Identity");
-            Console.WriteLine(" 4 - List same faces");
+            Console.WriteLine(" 3 - Lookup identity based on photo");
+            Console.WriteLine(" 4 - Lookup similar faces in collection");
             Console.WriteLine("");
             Console.Write("Option: ");
             var input = Console.ReadLine();
